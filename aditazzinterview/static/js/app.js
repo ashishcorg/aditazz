@@ -36,10 +36,7 @@ function fetchDummyData(){
 }
 
 function refreshMarkers(dataArray,dummyAutoData) {
-	//setMapOnAll(null);
-	for(var i=0;i<markers;i++){
-		markers[i].setMap(null)
-	}
+	
 	 markers = dataArray.map(function(autoDetail, i) {
 	    var autoMarker = new google.maps.Marker({
 	      position: autoDetail,
